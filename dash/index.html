@@ -34,6 +34,16 @@
         </div>
     </div>
 
+<div id="burgerBtn" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
     <!-- Main Content -->
     <div class="main-content">
         <!-- Header -->
@@ -73,15 +83,6 @@
         document.getElementById('burgerBtn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('active');
             document.querySelector('.main-content').classList.toggle('active');
-            document.getElementById('overlay').classList.toggle('active');
-        });
-
-        // Close the sidebar when clicking on the overlay
-        document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('active');
-            document.querySelector('.main-content').classList.remove('active');
-            document.getElementById('overlay').classList.remove('active');
-        });
     </script>
 
 </body>
