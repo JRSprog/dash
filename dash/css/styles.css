@@ -12,17 +12,17 @@
             position: relative;
         }
 
-        /* Sidebar - Hidden by default */
+        /* Sidebar Styles */
         .sidebar {
             position: fixed;
             top: 0;
-            left: -100%; /* Hidden by default off the screen */
-            width: 50%; /* Takes up 50% of the screen width */
+            left: -100%; /* Sidebar hidden by default */
+            width: 50%; /* For mobile, this will take half the screen */
             height: 100%;
             background-color: #e8eef1;
             transition: all 0.3s ease;
-            z-index: 100; /* Sidebar on top */
             padding-top: 20px;
+            z-index: 100; /* Sidebar on top of content */
         }
 
         .sidebar .logo {
@@ -73,12 +73,11 @@
             transition: margin-left 0.3s ease;
             padding: 20px;
             width: 100%;
-            margin-left: 0;
-            z-index: 50; /* Below the sidebar */
+            z-index: 50; /* Content stays below the sidebar */
             position: relative;
         }
 
-        /* Overlay for darkening the background */
+        /* Overlay Styles */
         .overlay {
             display: none; /* Hidden by default */
             position: fixed;
@@ -95,18 +94,18 @@
             display: block; /* Show overlay when sidebar is active */
         }
 
-        /* Header */
+        /* Header Styles */
         header {
             background-color: white;
             padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: -15px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             z-index: 100;
         }
 
+        /* Burger button */
         .burger-btn {
             background: none;
             border: none;
@@ -125,6 +124,7 @@
             border-radius: 4px;
         }
 
+        /* Footer Styles */
         footer {
             background-color: white;
             color: black;
@@ -138,36 +138,29 @@
             font-size: 14px;
         }
 
-        /* Sidebar active - when clicked (slides in) */
+        /* Sidebar active (mobile view) */
         .sidebar.active {
-            left: 0; /* Moves the sidebar into view */
+            left: 0; /* Sidebar slides in */
         }
 
+        /* Content shifts to the right when sidebar is active */
         .main-content.active {
-            margin-left: 50%; /* Moves the content to the right by 50% */
+            margin-left: 50%; /* Content shifts 50% to the right */
         }
 
-        /* Mobile responsiveness */
+        /* Mobile Responsive Design */
         @media (max-width: 768px) {
             .burger-btn {
                 display: block;
             }
 
+            .sidebar {
+                left: -100%; /* Initially hidden */
+                width: 50%; /* 50% width on mobile */
+            }
+
+            /* Make the main content take up full width on mobile */
             .main-content {
                 width: 100%;
-            }
-
-            header {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .profile img {
-                width: 30px;
-                height: 30px;
-            }
-
-            .dropdown-content {
-                width: 180px;
             }
         }
