@@ -192,124 +192,49 @@ footer p {
 .main-content.active {
     margin-left: 250px;
 }
- /* Overlay when sidebar is open */
- .overlay {
-    width: 250px;
-    background-color: #e8eef1;
-    color: black;
-    padding-top: 20px;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: -250px;
-    transition: all 0.3s;
-    z-index: 100;
-}
+ /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
 
-.overlay .logo {
-    text-align: center;
-    margin-bottom: 30px;
-}
+            .sidebar {
+                width: 0;
+                transition: all 0.3s ease-in-out;
+                position: fixed;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
 
-.overlay .logo img {
-    width: 100px;
-}
+            .sidebar.active {
+                width: 50%; /* Sidebar takes up 50% of the screen width on mobile */
+            }
 
-.overlay .nav-links {
-    list-style-type: none;
-    padding-left: 0;
-}
+            .main-content.active {
+                margin-left: 50%; /* Shift the content to the right when the sidebar is active */
+            }
 
-.overlay .nav-links li {
-    padding: 15px 20px;
-    text-align: left;
-    transition: all 0.3s ease;
-}
+            header {
+                justify-content: space-between;
+            }
 
-.overlay .nav-links li a {
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
+            .burger-btn {
+                display: block;
+            }
 
-.overlay .nav-links li a i {
-    margin-right: 10px;
-}
+            .header-right {
+                display: flex;
+                align-items: center;
+            }
 
-.overlay .nav-links li:hover {
-    background-color: #4C3BCF;
-    margin-left: 8px;
-    width: 235px;
-    border-radius: 10px;
-}
+            .profile img {
+                width: 30px;
+                height: 30px;
+            }
 
-.sidebar .nav-links li a:hover {
-    color: white;
-}
-
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 250px;
-        transition: all 0.3s;
-        position: fixed;
-        height: 100%;
-        top: 0;
-        left: -250px;
-        z-index: 100;
-    }
-
-    .sidebar.active {
-        left: 0;
-    }
-
-    .main-content {
-        margin-left: 0;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    .burger-btn {
-        display: block;
-    }
-
-    .header-right {
-        display: flex;
-        align-items: center;
-    }
-
-    .profile img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .dropdown-content {
-        width: 180px;
-    }
-
-    .overlay {
-        display: block;
-    }
-}
-
-@media (max-width: 480px) {
-    .sidebar {
-        width: 200px;
-    }
-
-    header {
-        padding: 10px 20px;
-    }
-
-    .burger-btn {
-        display: flex;
-    }
-}
+            .dropdown-content {
+                width: 180px;
+            }
+        }
