@@ -21,29 +21,6 @@
         </ul>
     </div>
 
-    <!-- Overlay to cover content when sidebar is active -->
-    <div class="overlay" id="sidebar">
-        <div class="sidebar" id="sidebar">
-            <div class="logo">
-                <img src="images/blogo.png" alt="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Home</a></li>
-                <li><a href="#"><i class="fas fa-chart-line"></i> Outgoing Fees Reports</a></li>
-            </ul>
-        </div>
-    </div>
-
-<div id="burgerBtn" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-
     <!-- Main Content -->
     <div class="main-content">
         <!-- Header -->
@@ -79,10 +56,12 @@
     </div>
 
     <script>
-        // Toggle sidebar and overlay when burger menu is clicked
+        // Toggle sidebar
         document.getElementById('burgerBtn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('active');
             document.querySelector('.main-content').classList.toggle('active');
+        });
+
     </script>
 
 </body>
