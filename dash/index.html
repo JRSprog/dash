@@ -21,6 +21,9 @@
         </ul>
     </div>
 
+     <!-- Overlay to darken background when sidebar is active -->
+    <div class="overlay" id="overlay"></div>
+
     <!-- Main Content -->
     <div class="main-content">
         <!-- Header -->
@@ -56,10 +59,18 @@
     </div>
 
     <script>
-        // Toggle sidebar and overlay when burger menu is clicked
+        // Toggle sidebar when burger menu is clicked
         document.getElementById('burgerBtn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.toggle('active');
             document.querySelector('.main-content').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        });
+
+        // Close the sidebar when the overlay is clicked
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('active');
+            document.querySelector('.main-content').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
         });
     </script>
 
