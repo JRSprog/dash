@@ -256,7 +256,7 @@ footer p {
     }
 
     .overlay {
-        width: 250px;
+        width: 200px;
         background-color: #e8eef1;
         color: black;
         padding-top: 20px;
@@ -268,7 +268,7 @@ footer p {
         z-index: 100;
     }
 
-    .sidebar.active {
+    .overlay.active {
         left: 0;
     }
 
