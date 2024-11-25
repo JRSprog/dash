@@ -82,6 +82,25 @@
 .burger-btn {
  display: block;
 }
+.header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+ .dropdown-content {
+        width: 180px;
+    }
+ header {
+        padding: 10px 20px;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
 
  .overlay {
   height: 100%;
@@ -117,12 +136,6 @@
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -132,3 +145,4 @@
   right: 35px;
   }
 }
+  }
