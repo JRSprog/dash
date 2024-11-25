@@ -194,14 +194,59 @@ footer p {
 }
  /* Overlay when sidebar is open */
  .overlay {
-    display: none;
+    width: 250px;
+    background-color: #e8eef1;
+    color: black;
+    padding-top: 20px;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 50;
+    top: 0;
+    left: -250px;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.overlay .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.overlay .logo img {
+    width: 100px;
+}
+
+.overlay .nav-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.overlay .nav-links li {
+    padding: 15px 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.overlay .nav-links li a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.overlay .nav-links li a i {
+    margin-right: 10px;
+}
+
+.overlay .nav-links li:hover {
+    background-color: #4C3BCF;
+    margin-left: 8px;
+    width: 235px;
+    border-radius: 10px;
+}
+
+.sidebar .nav-links li a:hover {
+    color: white;
 }
 
   /* Mobile responsiveness */
