@@ -10,16 +10,18 @@ body {
 }
 
 .sidebar {
-    width: 250px;
+    width: 0;
     background-color: #e8eef1;
     color: black;
     padding-top: 20px;
     position: fixed;
     height: 100%;
     top: 0;
-    left: -250px;
+    left: 0;
     transition: all 0.3s;
-    z-index: 100;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .sidebar .logo {
@@ -65,6 +67,17 @@ body {
     color: white;
 }
 
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 55px;
+    margin-top: 5px;
+    color: #333;
+    background: none;
+  }
+
 .main-content {
     margin-left: 0;
     padding: 20px;
@@ -73,16 +86,21 @@ body {
 }
 
 header {
+    width: 1535px;
     background-color: white;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -15px;
+    top: 0;
+    left: 0;
+    position: sticky;
+    margin-top: -37px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: -18px;
 }
 
-header .header-left a {
+header .header-left button {
     width: 80px;
     height: 50px;
     background-color: white;
@@ -163,6 +181,9 @@ header .header-right {
     width: 30px;
     height: 25px;
     cursor: pointer;
+    font-size: 20px;
+    color: gray;
+    margin-top: -13px;
 }
 
 .content {
@@ -179,6 +200,11 @@ footer {
     padding: 20px;
     margin-top: 20px;
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
 }
 
 footer p {
@@ -256,3 +282,78 @@ footer p {
                 display: flex;
             }
         }
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3; /* Gray bottom border */
+  }
+  
+  th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9; /* Slight hover effect */
+  }
+  .edit {
+    background-color: mediumblue;
+    padding: 10px;
+    border: none;
+    margin: 3px;
+    color: white;
+    border-radius: 7px;
+  }
+  .edit:hover, .edit i:hover {
+    background-color: greenyellow;
+    color: black;
+  }
+  .delete {
+    background-color: mediumblue;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 7px;
+  }
+  .delete:hover, .delete i:hover {
+    background-color: crimson;
+    color: black;
+  }
+  /* Responsive table */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+    }
+  
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+    }
+  }
