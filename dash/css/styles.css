@@ -54,6 +54,10 @@ body {
     margin-right: 10px;
 }
 
+.sidebar .nav-links i {
+   background: none;
+}
+
 .sidebar .nav-links li:hover {
     background-color: #4C3BCF;
     margin-left: 8px;
