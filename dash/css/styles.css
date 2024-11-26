@@ -10,18 +10,16 @@ body {
 }
 
 .sidebar {
-    width: 0;
+    width: 250px;
     background-color: #e8eef1;
     color: black;
     padding-top: 20px;
     position: fixed;
     height: 100%;
     top: 0;
-    left: 0;
+    left: -250px;
     transition: all 0.3s;
-    height: 100%;
-    z-index: 1;
-    overflow-x: hidden;
+    z-index: 100;
 }
 
 .sidebar .logo {
@@ -67,17 +65,6 @@ body {
     color: white;
 }
 
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 25px;
-    margin-left: 55px;
-    margin-top: 5px;
-    color: #333;
-    background: none;
-  }
-
 .main-content {
     margin-left: 0;
     padding: 20px;
@@ -86,21 +73,16 @@ body {
 }
 
 header {
-    
     background-color: white;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    left: 0;
-    position: sticky;
-    margin-top: -37px;
+    margin-top: -15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-left: -18px;
 }
 
-header .header-left button {
+header .header-left a {
     width: 80px;
     height: 50px;
     background-color: white;
@@ -183,7 +165,6 @@ header .header-right {
     cursor: pointer;
     font-size: 20px;
     color: gray;
-    margin-top: -13px;
 }
 
 .content {
@@ -202,9 +183,6 @@ footer {
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
     bottom: 0;
     width: 100%;
-    text-align: center;
-    position: fixed;
-    left: 0;
 }
 
 footer p {
@@ -232,6 +210,13 @@ footer p {
                 top: 0;
                 left: -250px;
                 z-index: 100;
+            }
+
+            .sidebar .nav-links li:hover {
+                background-color: #4C3BCF;
+                margin-left: 8px;
+                width: 225px;
+                border-radius: 10px;
             }
 
             .sidebar.active {
@@ -276,7 +261,6 @@ footer p {
 
             header {
                 padding: 10px 20px;
-                header: 480px
             }
 
             .burger-btn {
@@ -324,7 +308,7 @@ table {
     color: white;
     border-radius: 7px;
   }
-  .delete:hover, .delete i:hover {
+  .delete:hover, i:hover {
     background-color: crimson;
     color: black;
   }
