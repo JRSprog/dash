@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+.login {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.login img {
+    width: 25%;
+}
+.login p {
+    font-size: 40px;
+    font-weight: bold;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    background: white;
+    width: 100%;
+}
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+.input-container i {
+    color: black;
+    font-size: 1.2em;
+}
+.password-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.password-container input {
+    flex: 1;
+}
+.button {
+    width: 103%;
+    padding: 10px;
+    background: #2a292c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+button:hover {
+    background: #333333;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .login {
+        width: 90%;
+    }
+    .input-container {
+        padding: 12px;
+    }
+    .input-container input {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
