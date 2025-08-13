@@ -1,0 +1,48 @@
+
+[2025-06-17 05:21:39] Archive script started
+Session data: Array
+(
+    [user_id] => 4
+    [user_name] => jrspro
+    [user_role] => admin
+    [error] => Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'target_id' in 'field list'
+    [success] => Purchase received successfully! Updated 1 products.
+)
+
+GET data: Array
+(
+    [id] => 3
+)
+
+
+[2025-06-17 05:22:06] Archive script started
+Session data: Array
+(
+    [user_id] => 4
+    [user_name] => jrspro
+    [user_role] => admin
+    [error] => Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'target_id' in 'field list'
+    [success] => Purchase received successfully! Updated 1 products.
+)
+
+GET data: Array
+(
+    [id] => 3
+)
+
+
+[2025-06-17 05:22:09] Archive script started
+Session data: Array
+(
+    [user_id] => 4
+    [user_name] => jrspro
+    [user_role] => admin
+    [error] => Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'target_id' in 'field list'
+    [success] => Purchase received successfully! Updated 1 products.
+)
+
+GET data: Array
+(
+    [id] => 3
+)
+

@@ -1,0 +1,368 @@
+
+[2025-06-20 05:50:33] Starting receive process
+POST Data: Array
+(
+    [purchase_id] => 11
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+
+[2025-06-20 05:51:07] Starting receive process
+POST Data: Array
+(
+    [purchase_id] => 11
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+
+[2025-06-20 05:52:28] Starting receive process
+POST Data: Array
+(
+    [purchase_id] => 11
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+
+[2025-06-20 05:53:16] Starting receive process
+POST Data: Array
+(
+    [purchase_id] => 11
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+
+[2025-06-20 06:01:54] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 11
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 11
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+50) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=11
+)
+
+MEMORY USAGE: 516680 bytes
+PEAK MEMORY: 537184 bytes
+EXECUTION TIME: 0.021480083465576 seconds
+
+[2025-06-20 06:03:30] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 10
+    [receive_date] => 2025-06-20
+    [action] => receive
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 10
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 3 (+15) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=10
+)
+
+MEMORY USAGE: 516680 bytes
+PEAK MEMORY: 537184 bytes
+EXECUTION TIME: 0.0090768337249756 seconds
+
+[2025-06-20 06:06:25] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 12
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+2) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=12
+)
+
+MEMORY USAGE: 516536 bytes
+PEAK MEMORY: 537072 bytes
+EXECUTION TIME: 0.018917083740234 seconds
+
+[2025-06-20 06:08:46] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 12
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+2) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=12
+)
+
+MEMORY USAGE: 516600 bytes
+PEAK MEMORY: 537136 bytes
+EXECUTION TIME: 0.012047052383423 seconds
+
+[2025-06-20 06:12:24] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 12
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+2) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=12
+)
+
+MEMORY USAGE: 516176 bytes
+PEAK MEMORY: 536648 bytes
+EXECUTION TIME: 0.017024040222168 seconds
+
+[2025-06-20 06:16:07] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 12
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+2) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => view.php?id=12
+)
+
+MEMORY USAGE: 516104 bytes
+PEAK MEMORY: 536576 bytes
+EXECUTION TIME: 0.014471054077148 seconds
+
+[2025-06-20 06:20:25] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+SESSION DATA: Array
+(
+    [user_id] => 14
+    [user_name] => jrspro
+    [user_role] => admin
+)
+
+PROCESSING Purchase ID: 12
+Receive Date: 2025-06-20
+Transaction started
+Purchase update - Rows affected: 1
+Found 1 items to process
+Updated product 6 (+2) - Rows affected: 1
+Transaction committed successfully
+Total products updated: 1
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => index.php?success=1&updated=1
+)
+
+MEMORY USAGE: 516136 bytes
+PEAK MEMORY: 536592 bytes
+EXECUTION TIME: 0.014497995376587 seconds
+
+[2025-06-20 06:25:27] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => purchases/index.php?success=1&updated=1
+)
+
+
+[2025-06-20 06:26:00] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+RESPONSE: Array
+(
+    [success] => 
+    [message] => Purchase order was already received or is not pending
+    [redirect] => purchases/index.php
+)
+
+
+[2025-06-20 06:27:17] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => purchases/index.php?success=1&updated=1
+)
+
+
+[2025-06-20 06:28:26] NEW REQUEST ======================
+REQUEST METHOD: POST
+POST DATA: Array
+(
+    [purchase_id] => 12
+    [receive_date] => 2025-06-20
+)
+
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => purchases/index.php?success=1&updated=1
+)
+
+
+[2025-06-20 06:33:56] NEW REQUEST ======================
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => index.php?success=1&updated=1
+)
+
+
+[2025-06-20 06:34:36] NEW REQUEST ======================
+RESPONSE: Array
+(
+    [success] => 1
+    [message] => Purchase received successfully! Updated 1 products.
+    [redirect] => index.php?success=1&updated=1
+)
+
+
+[2025-06-20 06:39:03] NEW REQUEST ======================
+
+[2025-06-20 06:53:56] NEW REQUEST ======================
+
+[2025-06-20 07:17:36] NEW REQUEST ======================
+
+[2025-06-20 07:29:10] NEW REQUEST ======================
+
+[2025-06-20 07:34:56] NEW REQUEST ======================
